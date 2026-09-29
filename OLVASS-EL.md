@@ -7,11 +7,7 @@
 3. Várd meg az indulást. A böngésző automatikusan megnyílik: **http://localhost:8080**.
 4. Az indítóablak maradjon nyitva. Leállítás: **Ctrl+C** az indítóablakban, vagy dupla kattintás a **LEALLITAS.cmd** fájlra.
 
-A most előkészített munkamappában a Java már rendelkezésre áll. A ZIP-csomagból indítva az első futás letölti a hordozható Java 21-et (~200 MB), ellenőrzi a letöltés SHA-256 lenyomatát, és a projekt saját `.runtime` mappájába teszi. Nem kell rendszergazdai telepítés, és a meglévő Java-beállításaid nem változnak.
-
-A csomag tartalmazza az előre lefordított `movieclub.jar` fájlt. Indításhoz nem kell Maven, Docker vagy külön adatbázis. Az első Java-letöltés után a helyi katalógus, értékelés, listák és ajánlások hálózat nélkül is működnek.
-
-**GitHubról letöltött vagy klónozott változat:** a repó a forráskódot tartalmazza, az előre fordított JAR-t és a hordozható Java-környezetet nem. Az INDITAS.cmd az első alkalommal automatikusan letölti a szükséges eszközöket és függőségeket, lefuttatja a teszteket, majd elkészíti és elindítja a programot. Ez internetkapcsolatot és néhány percet igényel.
+A GitHub-repó a forráskódot tartalmazza, az előre fordított JAR-t és a hordozható Java-környezetet nem. Az INDITAS.cmd első futáskor letölti a hordozható Java 21-et (~200 MB), ellenőrzi a letöltés SHA-256 lenyomatát, letölti a Maven-függőségeket, lefuttatja a teszteket, majd elkészíti és elindítja a programot. Ehhez internetkapcsolat és néhány perc szükséges. Az eszközök a projekt `.runtime` mappájába kerülnek, a rendszer Java-beállításai nem változnak. Külön Maven-, Docker- vagy adatbázis-telepítés nem szükséges.
 
 ### Bemutatófiókok
 
@@ -75,7 +71,7 @@ $env:TMDB_TOKEN = 'IDE_KERUL_A_SAJAT_READ_ACCESS_TOKEN'
 
 A beállítás erre a terminálmunkamenetre vonatkozik. A tokent ne írd a forráskódba, ne add be a projektcsomagban és ne töltsd fel Gitbe. A keresési találat önmagában még nem ajánlható film: csak az importálás után kerül a saját katalógusba.
 
-API-kulcsot nem mellékeltünk. Az éles TMDB-hozzáférés nem volt kipróbálható saját token nélkül; az integráció leképezését és hibakezelését helyi tesztszerver ellenőrizte.
+API-kulcsot a repó nem tartalmaz. Az éles TMDB-hozzáférés nem volt kipróbálható saját token nélkül; az integráció leképezését és hibakezelését helyi tesztszerver ellenőrizte.
 
 A felület saját tipografikus borítókat használ, nem hivatalos filmplakátokat. A TMDB-ből cím, év, leírás és műfajok importálhatók.
 

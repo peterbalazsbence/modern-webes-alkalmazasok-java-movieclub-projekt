@@ -187,9 +187,7 @@ Nem használt: JSP, kézzel írt servlet, Spring Reactive, időzített feladat. 
 
 ## AI-közreműködés
 
-A feladat AI-segítséggel készült: követelmények értelmezése, terv, kód, tesztek, felület és dokumentáció. Az AI-közreműködést a beadáskor a tantárgyi szabályok szerint jelöld. Az alkalmazás futás közben nem hív LLM-et.
-
-A dokumentáció nem helyettesíti a megértést: a beadó tudja elmagyarázni a pontozást, az adatbázis egyedi kulcsát, a konstruktoros injektálást, a CSRF szerepét és a tesztek működését.
+A fejlesztés során AI-segítséget használtam a tervezéshez, a kódhoz, a tesztekhez, a felülethez és a dokumentációhoz. Az ajánlási logika működését és a kritikus szabályokat tesztekkel ellenőriztem. Az alkalmazás futás közben nem hív LLM-et.
 
 ## Hivatalos források
 
