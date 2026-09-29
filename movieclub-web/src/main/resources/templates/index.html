@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="hu" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111813"><title>MovieClub · A következő kedvenced</title>
+<link rel="icon" th:href="@{/favicon.svg}" type="image/svg+xml"><link rel="stylesheet" th:href="@{/style.css}">
+<script defer th:src="@{/app.js}"></script></head>
+<body><header class="site-header"><a class="brand" href="#catalog"><span class="brand-icon">m<span>c</span></span> MovieClub<span class="brand-dot">.</span></a>
+<nav aria-label="Főmenü" id="nav"></nav><div id="account"></div></header>
+<main id="app" tabindex="-1"><p class="loading">Betöltjük a filmeket…</p></main>
+<footer><a class="brand small" href="#catalog">MovieClub.</a><span>Jó filmek. Saját vélemények. Közös élmények.</span><span class="footer-note">Egyetemi projekt · <a href="#about">A projektről</a></span></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="confirm"><form method="dialog"><h2>Biztosan törlöd?</h2><p id="confirm-text"></p><div class="actions"><button value="cancel" class="button secondary">Mégse</button><button value="ok" class="button danger">Törlés</button></div></form></dialog>
+<noscript>A MovieClub használatához engedélyezd a JavaScriptet a böngésződben.</noscript>
+</body></html>

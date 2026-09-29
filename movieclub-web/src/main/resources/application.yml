@@ -1,0 +1,26 @@
+server:
+  address: ${SERVER_ADDRESS:127.0.0.1}
+  port: ${PORT:8080}
+  servlet:
+    session:
+      cookie:
+        http-only: true
+        same-site: lax
+spring:
+  datasource:
+    url: ${MOVIECLUB_DB_URL:jdbc:h2:file:./data/movieclub;DB_CLOSE_ON_EXIT=FALSE}
+    username: sa
+    password: ${MOVIECLUB_DB_PASSWORD:}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+movieclub:
+  demo: ${MOVIECLUB_DEMO:true}
+  tmdb-token: ${TMDB_TOKEN:}
+
